@@ -1,0 +1,310 @@
+.atm {
+    width: 100vw;
+    height: 100vh;
+    border: solid lightgray 20px;
+    background-color: rgb(190, 189, 189);
+    border-left: solid 55px gray;
+    border-right: solid 55px gray;
+}
+.keyInput {
+    font-size: 42px;
+    height: 50px;
+    width: 165px;
+}
+
+h1 {
+    text-align: center;
+    color: green;
+}
+h2 {
+    text-align: center;
+    color: black;
+}
+
+
+.cash {
+    width: 450px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    top: 110px;
+    left: 180px;
+    border: solid rgb(44, 44, 44) 6px;
+    border-right: solid rgb(82, 82, 82) 6px;
+    border-left: solid rgb(82, 82, 82) 6px;
+}
+
+
+.leftPanel {
+    background-color: rgb(190, 189, 189);
+    width: 600px;
+    position: relative;
+    height: 400px;
+    top: 100px;
+    left: 100px;
+    border: solid black 2px;
+}
+.mainScreen {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    background-color: #59A5D8;
+    border: solid rgb(206, 204, 204) 40px;
+    border-right: rgb(172, 172, 172) solid 40px;
+    border-left: rgb(172, 172, 172) solid 40px;
+    left: 50px;
+    top: 50px;
+}
+
+
+.button {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: #E0E1DD;
+    filter: drop-shadow(2px 0 2px);
+}
+
+
+.button:active {
+    filter: drop-shadow(0 0 0);
+    margin-left: 2px;
+    margin-top: 2px;
+    /* Active is when you use the button. Margin left and top makes the shadow effect go away while using the button. */
+}
+
+
+.button:focus {
+    outline: transparent; 
+    /* This makes blue outline disapear. */
+}
+
+
+.button1 {
+    top: 136px;
+    left: 10px;
+}
+
+.button2 {
+    top: 198px;
+    left: 10px;
+}
+
+.button3 {
+    top: 262px;
+    left: 10px;
+}
+
+.button4 {
+    top: 136px;
+    right: 10px;
+}
+
+.button5 {
+    top: 198px;
+    right: 10px;
+}
+
+.button6 {
+    top: 262px;
+    right: 10px;
+}
+
+.rightPanel {
+    position: absolute;
+    right: 0;
+    width: 200px;
+    top: 0;
+    bottom: 0;
+    left: 800px;
+    width: 550px;
+}
+
+.numPad {
+    position: relative;
+    top: 373px;
+    width: 172px;
+    left: 150px;
+    transform: perspective(20px) rotateX(1deg);
+}
+
+.numpad {
+    position: absolute;
+    height: 28px;
+    width: 40px;
+}
+
+.numpad1 {
+    left: 0;
+    top: 0;
+}
+
+.numpad2 {
+    left: 42px;
+    top: 0;
+}
+
+.numpad3 {
+    left: 84px;
+    top: 0;
+}
+
+/* Delete button */
+.numpadR { 
+    width: 50px;
+    left: 126px;
+    top: 0;
+    color: white;
+    background-color: red;
+    border-left: solid 6px rgb(255, 61, 61) ;
+    border-bottom: solid 6px rgb(255, 61, 61);
+}
+
+.numpad4 {
+    top: 30px;
+    left: 0;
+}
+
+.numpad5 {
+    top: 30px;
+    left: 42px;
+}
+
+.numpad6 {
+    top: 30px;
+    left: 84px;
+}
+
+
+
+.numpad7 {
+    top: 60px;
+    left: 0;
+}
+
+.numpad8 {
+    top: 60px;
+    left: 42px;
+}
+
+.numpad9 {
+    top: 60px;
+    left: 84px;
+}
+
+/* Back Button */
+.numpadO {
+    width: 50px;
+    top: 45px;
+    left: 126px;
+    color: white;
+    background-color: orange;
+    border-left: solid 6px rgb(248, 194, 93);
+    border-bottom: solid 6px rgb(248, 194, 93);
+}
+
+.numpadS {
+    top: 90px;
+    left: 0;
+}
+
+.numpad0 {
+    top: 90px;
+    left: 42px;
+}
+
+.numpadD {
+    top: 90px;
+    left: 84px;
+}
+
+/* Enter Button */
+.numpadG {
+    width: 50px;
+    top: 90px;
+    left: 126px;
+    color: white;
+    background-color: green;
+    border-left: solid 6px rgb(44, 131, 44);
+    border-bottom: solid 6px rgb(44, 131, 44);
+}
+
+.serialNumber {
+    position: absolute;
+    top: 303px;
+    left: 150px;
+    height: 50px;
+    width: 165px;
+    background-color: white;
+}
+
+.card {
+    position: absolute;
+    border: solid lightslategrey 5px;
+    border-left: solid lightgrey 5px;
+    border-right: solid lightgrey 5px;
+    top: 180px;
+    left: 150px;
+    background-color: black;
+    width: 165px;
+    height: 13px;
+}
+
+.padWrapper {
+    position: absolute;
+    height: 131px;
+    width: 245px;
+    top: 234px;
+    right: 196px;
+    background-color: grey;
+    border: solid lightgrey 55px;
+    border-right: solid 19px;
+    border-left: solid 19px;
+    border-bottom: none;
+}
+
+.padWrapperBottom {
+    position: absolute;
+    height: 192px;
+    width: 265px;
+    top: 357px;
+    right: 186px;
+    border-top: solid black 1px;
+    background-color: gray;
+    border-right: solid 20px;
+    border-left: solid 20px;
+    border-bottom: solid lightgrey 40px;
+    transform: perspective(20px) rotateX(1deg);
+}
+.b1{
+    margin-left: -326px;
+    margin-top: -28px;
+}
+
+.b2{
+    margin-left: -348px;
+    margin-top: 0px;
+}
+
+.b3{
+    margin-left: -331px;
+    margin-top: 46px
+}
+
+.b4{
+    margin-left: 300px;
+    margin-top: -31px;
+    margin-bottom: 40px;
+
+}
+
+.b5{
+    margin-left: 295px;
+    margin-bottom: 36px;
+    margin-top: -28px;
+}
+
+.b6{
+    margin-left: 377px;
+    margin-top: -28px;
+}

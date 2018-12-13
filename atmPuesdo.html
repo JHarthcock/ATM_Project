@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ATM Pseudocode</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background: #ddd;
+            font-size: 21px;
+            padding: 0 0 60px;
+        }
+        
+        .indent {
+            margin-left: 30px;
+            list-style-type: circle; 
+        }
+        
+        .strike {
+            text-decoration: line-through;
+        }
+        .pass {
+            background: green;
+            color: #fff;
+        }
+        </style>
+</head>
+<body>
+                <!-- testing -->
+                <h2>TESTING</h2>
+                <ul>
+                    <li class="pass">I try to use an invalid gas card in the ATM</li>
+                    <li>I try to use an invalid PIN code</li>
+                    <li>I try to withdrawl more money than I currently have from checking.</li>
+                    <li>I try to withdrawl more money than I currently have from savings.</li>
+                    <li>ETC...</li>
+                </ul>
+
+
+                <br>
+                <br>
+                <br>
+
+
+
+
+
+
+                <h1>ATM</h1>
+                    <ul> <!-- This is asking for a card number, it will continue is if it's just 12 digits not a actual card number. -->
+
+                        <li class="indent">This is named cardNumber</li>
+                        <li>Enter your card number!</li>
+                    
+                        <li class="indent">IF card number matches 4 digit code, run PIN.</li>
+                        
+                        <li class="indent"> ELSE PRINT invalid card number, please try again. LOOP Card Number</li>
+                    </ul>
+
+                    <ul> <!-- This is asking for a PIN number equal to 4 in order to move on. -->
+                        <li class="indent">This is named {PIN}.</li>
+                        <li>Enter PIN code</li>
+                        <li>IF PIN is equal to the 4 digit code move to home screen.</li>
+                        <li>IF PIN is not equal to 4 digit code PRINT invalid PIN, please try again.</li>
+                    </ul>
+
+
+                    <h2>Main Page</h2> <!-- This is the start of the Main Page of your profile. -->
+                    <h3>Would you like checking or savings?</h3> <!-- Within your one account you'll have a checking and savings, this is where you choose one or the other. -->
+                    <ul>
+                        <li>Checking</li>
+                        <li>Savings</li>
+                    </ul>
+                    <h3>Please make a selection!</h3> <!--You will choose either Deposit, Widthdraw, Pay Bills, or Account Info. -->
+                    <ul>
+                        <li>Deposit</li>
+                        <li class="indent">IF answer is Deposit PRINT "How much would you like to Deposit?" "{totalAmountOfMoney}" Run function Total</li>
+                        <li class="indent">Total gets totalAmountOfMoney + Deposit</li>
+                        <li>Widthdraw</li>
+                        <li class="indent">IF answer is Widthdraw PRINT "How much would you like to Widthdraw?" "{totalAmountOfMoney}" Run function Total</li>
+                        <li>Pay Bills</li>
+                        <li class="indent">IF answer is Pay Bills PRINT "How much does your bill cost" subtract billAmount from totalAmountOfMoney.</li>
+                        <li>Account Info</li>
+                        <li class="indent">IF answer is Account Info 
+                            PRINT "Your card number is {cardNumber}.
+                            Your PIN is {PIN}.
+                            And your current total is {totalAmountOfMoney}.</li>
+                    </ul>
+                        
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+
+
+
+
+                    <h2>日本語</h2>
+                    <ul>
+                        <li>あなたのカード番号を入力してください！</li>
+                        <li class="indent">カード番号が12以上の場合数字</li>
+                        <li class="indent">無効なカード番号を印刷してください。もう一度お試しください。</li>
+                        <li>有効なカードを印刷しない、PINを入力する</li>
+                    </ul>
+                    <ul>
+                        <li>PINコードを入力してください</li>
+                        <li>PINが4桁以下の場合</li>
+                        <li>無効なPINを印刷してください。もう一度お試しください。</li>
+                        <li>それ以外の場合は有効なPINを印刷してください。何をしますか？</li>
+                    </ul>
+                    <h2>メインページ</h2>
+                    <h3>選択してください</h3>
+                    <ul>
+                        <li>預り金</li>
+                        <li>撤退</li>
+                        <li>手形を支払う</li>
+                        <li>アカウント情報</li>
+                    </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+        Accept a card, 
+        take a pin code (assume always correct), 
+        ask how much they want, 
+        check balance 
+            if have enough 
+                dispense money 
+            else 
+                'You have insufficient funds'
+    -->
+    <!-- 
+        add in the ability to check if the card is valid or not
+        add in a check for the pin code if it is valid or not
+        set a new variable the recieve a CALL to checkBalance
+    -->
+</body>
+</html>

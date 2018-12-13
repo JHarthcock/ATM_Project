@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>ATM</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+    <div class="atm">
+        <h1>Harthcock's ATM</h1>
+        <div class="cash"></div>
+        <div class="leftPanel">
+            <button class="button button1" onclick="start()"></button>
+            <button class="button button2" onclick="start()"></button>
+            <button class="button button3" onclick="start()"></button>
+            <button class="button button4" onclick="start()"></button>
+            <button class="button button5" onclick="start()"></button>
+            <button class="button button6" onclick="start()"></button>
+            <div class="mainScreen">
+                <!-- <div class="languageScreen">
+                    <h1>Please select language</h1>
+                    <br>
+                    <h3>English</h3>
+                    <h3>Japanese</h3>
+                </div> -->
+                <div class="displayScreen">
+                    <h2 id="display"></h2>
+                </div>
+            </div>
+        </div>
+        <div class="rightPanel">
+            <div class="padWrapper">
+            </div>
+            <div class="padWrapperBottom">
+            </div>
+            <div class="card"></div>
+            <div class="serialNumber">
+            <form>
+                <div id="user-input"></div>
+            </form>
+        </div>
+            <div class="numPad">
+                <button onclick="showNumPad(this.value)" value="1" class="numpad numpad1">1</button>
+                <button onclick="showNumPad(this.value)" value="2" class="numpad numpad2">2</button>
+                <button onclick="showNumPad(this.value)" value="3" class="numpad numpad3">3</button>
+                <button onclick="clearPassword()" value="Clr" class="numpad numpadR" onclick="clearPassword()">Del</button>
+
+                <button onclick="showNumPad(this.value)" value="4" class="numpad numpad4">4</button>
+                <button onclick="showNumPad(this.value)" value="5" class="numpad numpad5">5</button>
+                <button onclick="showNumPad(this.value)" value="6" class="numpad numpad6">6</button>
+                
+                <button onclick="showNumPad(this.value)" value="7" class="numpad numpad7">7</button>
+                <button onclick="showNumPad(this.value)" value="8" class="numpad numpad8">8</button>
+                <button onclick="showNumPad(this.value)" value="9" class="numpad numpad9">9</button>
+                <button onclick="deleteChar()" value="Del" class="numpad numpadO">Back</button>
+
+                <button onclick="showNumPad(this.value)" value="*" class="numpad numpadS">*</button>
+                <button onclick="showNumPad(this.value)" value="0" class="numpad numpad0">0</button>
+                <button onclick="showNumPad(this.value)" value="." class="numpad numpadD">.</button>
+                <button onclick="CardNum()" class="numpad numpadG">Enter</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/ATM.js"></script>
+</html>
