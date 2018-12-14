@@ -30,10 +30,11 @@
 </head>
 <body>
 <h1>ATM</h1>
-<ul> <!-- This is asking for a card number, it will continue is if it's just 12 digits not a actual card number. -->
+<ul>The ATM will start powered off and you press one of the 6 side buttons to turn it on.</ul>
 
-    <li class="indent">This is named cardNumber</li>
-    <li>Enter your card number!</li>
+<ul> <!-- This is asking for a card number, it will continue is if it's just 12 digits not a actual card number. -->
+    <li>This is cardNumber</li>
+    <li class="indent">Enter your card number!</li>
 
     <li class="indent">IF card number matches 4 digit code, run PIN.</li>
     
@@ -41,33 +42,33 @@
 </ul>
 
 <ul> <!-- This is asking for a PIN number equal to 4 in order to move on. -->
-    <li class="indent">This is named {PIN}.</li>
-    <li>Enter PIN code</li>
-    <li>IF PIN is equal to the 4 digit code move to home screen.</li>
-    <li>IF PIN is not equal to 4 digit code PRINT invalid PIN, please try again.</li>
+    <li>This is {PIN}.</li>
+    <li li class="indent">Enter PIN code</li>
+    <li li class="indent">IF PIN is equal to the 4 digit code move to home screen.</li>
+    <li li class="indent">IF PIN is not equal to 4 digit code PRINT invalid PIN, please try again.</li>
 </ul>
 
 
 <h2>Main Page</h2> <!-- This is the start of the Main Page of your profile. -->
-<h3>Would you like checking or savings?</h3> <!-- Within your one account you'll have a checking and savings, this is where you choose one or the other. -->
-<ul>
-    <li>Checking</li>
-    <li>Savings</li>
-</ul>
+
 <h3>Please make a selection!</h3> <!--You will choose either Deposit, Widthdraw, Pay Bills, or Account Info. -->
+<h3>Deposit, Widthdraw, Fast Cash, Account info, and Exit.</h3>
 <ul>
     <li>Deposit</li>
     <li class="indent">IF answer is Deposit PRINT "How much would you like to Deposit?" "{totalAmountOfMoney}" Run function Total</li>
     <li class="indent">Total gets totalAmountOfMoney + Deposit</li>
     <li>Widthdraw</li>
     <li class="indent">IF answer is Widthdraw PRINT "How much would you like to Widthdraw?" "{totalAmountOfMoney}" Run function Total</li>
-    <li>Pay Bills</li>
-    <li class="indent">IF answer is Pay Bills PRINT "How much does your bill cost" subtract billAmount from totalAmountOfMoney.</li>
+    <li>Fast Cash</li>
+    <li class="indent">IF answer is Fast Cash PRINT "How much cash would you like?" subtract fastCash from totalAmountOfMoney.</li>
     <li>Account Info</li>
-    <li class="indent">IF answer is Account Info 
+    <li class="indent">IF answer is Account Info
+        PRINT "Your name is (Username)"
         PRINT "Your card number is {cardNumber}.
-        Your PIN is {PIN}.
-        And your current total is {totalAmountOfMoney}.</li>
+        PRINT Your PIN is {PIN}.
+        PRINT Your current total is {totalAmountOfMoney}.</li>
+    <li>Exit</li>
+    <li class="indent">IF answer is Exit restart program.</li>
 </ul>
 
 
