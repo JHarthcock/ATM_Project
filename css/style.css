@@ -277,21 +277,31 @@ h2 {
     transform: perspective(20px) rotateX(1deg);
 }
 .b1{
+    pointer-events: none;
     margin-left: -326px;
     margin-top: -28px;
 }
 
 .b2{
+    pointer-events: none;
     margin-left: -348px;
     margin-top: 0px;
 }
 
 .b3{
+    pointer-events: none;
     margin-left: -331px;
-    margin-top: 46px
+    margin-top: 73px;
+}
+.cb3{
+    pointer-events: none;
+    margin-left: -331px;
+    margin-top: 47px;
+
 }
 
 .b4{
+    pointer-events: none;
     margin-left: 300px;
     margin-top: -31px;
     margin-bottom: 40px;
@@ -299,12 +309,56 @@ h2 {
 }
 
 .b5{
+    pointer-events: none;
     margin-left: 295px;
     margin-bottom: 36px;
     margin-top: -28px;
 }
 
 .b6{
+    pointer-events: none;
     margin-left: 377px;
     margin-top: -28px;
+}
+
+.FCb1{
+    pointer-events: none;
+    margin-left: -389px;
+    margin-top: -50px;
+    margin-bottom: 30px;
+}
+
+.FCb2{
+    pointer-events: none;
+    margin-left: -388px;
+    margin-top: -11px;
+    margin-bottom: 18px;
+}
+
+.FCb3{
+    pointer-events: none;
+    margin-left: -389px;
+    margin-top: 30px;
+    margin-bottom: 53px;
+}
+
+.FCb4{
+    pointer-events: none;
+    margin-left: 387px;
+    margin-top: -49px;
+    margin-bottom: 59px;
+
+}
+
+.FCb5{
+    pointer-events: none;
+    margin-left: 377px;
+    margin-bottom: 38px;
+    margin-top: -40px;
+}
+
+.FCb6{
+    pointer-events: none;
+    margin-left: 377px;
+    margin-top: -72px;
 }
