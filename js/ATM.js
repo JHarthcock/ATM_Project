@@ -2,7 +2,7 @@ var nonChar = '';
 var Users = {
     User1 :{
         userName: "Justin",
-        userBalance: 100,
+        userBalance: 100000,
         cardNumber: 4567,
         pinNum: 7654,
     },
@@ -71,7 +71,7 @@ function pin(){
 
         //Displays this after the if statment is true.
         //This function makes all of the words line up with all the buttons. Example top left button is b1, now everything under class b1 will be in the same space no matter what page we are on.
-        display.innerHTML ="<h4>Would you like to : </h4><br>"+ '<h4 class="b1">Withdrawl</h4> <h4 class="b4">Account Info</h4><h4 class="b2">Deposit</h4><h4 class= "b5"></h4><h4  class="tab b3"  >Fast Cash</h4><h4 class="b6">Exit</h4 ></div>';
+        display.innerHTML ="<h4>Would you like to : </h4><br>"+ '<h4 class="b1">Withdraw</h4> <h4 class="b4">Account Info</h4><h4 class="b2">Deposit</h4><h4 class= "b5"></h4><h4  class="tab b3"  >Fast Cash</h4><h4 class="b6">Exit</h4 ></div>';
         //These are the buttons on the "Main Page."
         var change = document.getElementsByTagName('button');
         change[0].setAttribute("onclick", "withdraw()");
@@ -88,7 +88,7 @@ function pin(){
 
 
 function Continue(){
-    display.innerHTML = '<h4>Would you like to : </h4><br>'+ '<h4 class="b1">Withdrawl</h4> <h4 class="b4">Account Info</h4><h4 class="b2">Deposit</h4><h4 class= "b5">Go to Savings</h4><h4  class="cb3"  >Fast Cash</h4><h4 class="b6">Exit</h4 ></div>';
+    display.innerHTML = '<h4>Would you like to : </h4><br>'+ '<h4 class="b1">Withdraw</h4> <h4 class="b4">Account Info</h4><h4 class="b2">Deposit</h4><h4  class="cb3"  >Fast Cash</h4><h4 class="b6">Exit</h4 ></div>';
         //These are the buttons on the "Main Page."
         var change = document.getElementsByTagName('button');
         change[0].setAttribute("onclick", "withdraw()");
@@ -262,7 +262,15 @@ function depositAmount(){
 
 
 function accountInfo(){
-    display.innerHTML = "<h4>Your name is: " + Users.User1.userName + "</h4><br> <h4> Your current balance is: " + Users.User1.userBalance + "</h4><br>";
+    display.innerHTML = "<h4>Your name is: " + Users.User1.userName + "</h4><br> <h4> Your current balance is: " + Users.User1.userBalance + "</h4><br><h4>Continue</h4>";
+    var change = document.getElementsByTagName("button");
+    change[0].setAttribute("onClick", ";");
+    change[1].setAttribute("onClick", ";");
+    change[2].setAttribute("onClick", "Continue();");
+    change[3].setAttribute("onClick", ";");
+    change[4].setAttribute("onClick", ";");
+    change[5].setAttribute("onClick", "Continue();");
+    change[20].setAttribute("onclick", ";")
 }
 
 
